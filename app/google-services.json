@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "135634999252",
+    "firebase_url": "https://fir-practice-a93a3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-practice-a93a3",
+    "storage_bucket": "fir-practice-a93a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135634999252:android:4aac2f2af71e25ea786841",
+        "android_client_info": {
+          "package_name": "com.example.firebasepractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135634999252-12cd3i70ntgfcjsddqgape8kvhefcvss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR9eCgMaiDysgjHIrBOHu9IvFXF9d2Dsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135634999252-12cd3i70ntgfcjsddqgape8kvhefcvss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
