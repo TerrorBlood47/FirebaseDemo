@@ -4,66 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AddTrackActivity">
 
-    <Button
+    <TextView
+        android:id="@+id/tvTrackNameOfTheArtist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="logout"
-        android:text="logout"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTrackName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextArtistName"
+        android:id="@+id/editTextTrackName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Track"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.088" />
 
-    <Spinner
-        android:id="@+id/spinnerGenre"
-        android:layout_width="250dp"
+    <SeekBar
+        android:id="@+id/seekBarRating"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginRight="50dp"
-        android:dropDownWidth="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="44dp"
+        android:max="5"
         app:layout_constraintStart_toStartOf="parent"
-        android:entries="@array/Genre"
-        app:layout_constraintTop_toBottomOf="@+id/editTextArtistName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTrackName" />
 
     <Button
-        android:id="@+id/addArtistBtn"
+        android:id="@+id/addTrackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Add Artist"
+        android:layout_marginTop="34dp"
+        android:text="Add Track"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerGenre" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRating" />
 
     <ListView
-        android:id="@+id/lvArtistsList"
+        android:id="@+id/lvTracksList"
         android:layout_marginLeft="20dp"
         android:layout_width="409dp"
         android:layout_height="300dp"
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addArtistBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/addTrackBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
